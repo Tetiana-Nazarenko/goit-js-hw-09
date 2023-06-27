@@ -6,7 +6,7 @@ const step = document.querySelector('[name="step"]');
 const amount = document.querySelector('[name="amount"]');
 const btn = document.querySelector('submit', createPromise);
 
-document.body.backgroundColor = 'green';
+document.body.style.backgroundColor = 'green';
 form.style.alignItem = 'center';
 
 function createPromise(position, delay) {
