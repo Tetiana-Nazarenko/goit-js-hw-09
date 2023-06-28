@@ -35,9 +35,9 @@ function onPromiseCreate(ev) {
   let stepValue = Number(step.value);
   let amountValue = Number(amount.value);
 
-  //l
   for (let i = 1; i <= amountValue; i += 1) {
-    delayValue += Number(stepValue);
+    // let promiseDelay = delayValue + stepValue * i;
+    delayValue += stepValue;
     createPromise(i, delayValue)
       .then(({ position, delay }) => {
         Notiflix.Notify.success(
